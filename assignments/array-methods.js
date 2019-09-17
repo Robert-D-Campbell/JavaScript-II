@@ -507,7 +507,7 @@ console.log(topDonators);
 
 // Problem 3
 // you would like to know how many people from "Gigashots" came out to support 5k Fun Run
-const wordtuneRunners = runners.filter(
-  runner => runner.company_name === "Gigashots"
+const skinixRunners = runners.filter(
+  runner => runner.company_name === "Skinix"
 );
-console.log(wordtuneRunners);
+console.log(skinixRunners);
