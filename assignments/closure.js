@@ -3,10 +3,18 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
+const counter = () => {
+  let count = 0;
+  return function() {
+    return ++count;
+  };
+};
+const newCounter = counter();
+console.log(newCounter());
+console.log(newCounter());
+console.log(newCounter());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
